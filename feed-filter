@@ -1,0 +1,5 @@
+#!/bin/bash
+date
+curl -s $1 |
+# Delete all elements which do not contain the following string
+xmlstarlet ed -d "//item[not(contains(title,'$2'))]" > $3
